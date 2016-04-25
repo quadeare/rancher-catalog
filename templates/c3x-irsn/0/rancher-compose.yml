@@ -1,0 +1,7 @@
+server:
+  scale: 1
+
+.catalog:
+  name: "c3x-samba"
+  version: "v0.1-c3x-samba"
+  description: "Serveur de partage Samba C3X"

@@ -1,0 +1,15 @@
+Xengine-comX:
+  ports:
+  - 14460:14460/tcp
+  - 14400:14400/tcp
+  external_links:
+  - c3x-samba/server:server-samba
+  volumes-from:
+  - c3x-samba/server:server-samba
+  log_driver: ''
+  labels:
+    io.rancher.container.start_once: 'true'
+  tty: true
+  log_opt: {}
+  image: spherea/c3x-prod-3.5-irsn:latest
+  stdin_open: true
