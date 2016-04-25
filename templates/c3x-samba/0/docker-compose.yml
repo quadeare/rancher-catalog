@@ -1,0 +1,13 @@
+server:
+  ports:
+  - 137:137/tcp
+  - 138:138/tcp
+  - 139:138/tcp
+  - 445:445/tcp
+  log_driver: ''
+  tty: true
+  log_opt: {}
+  image: spherea/c3x-samba:latest
+  volumes:
+  - /share/samba
+  stdin_open: true
