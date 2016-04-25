@@ -1,7 +1,7 @@
-server:
+Xengine-comX:
   scale: 1
 
 .catalog:
-  name: "c3x-samba"
-  version: "v0.1-c3x-samba"
-  description: "Serveur de partage Samba C3X"
+  name: "c3x-irsn"
+  version: "v0.1-c3x-irsn"
+  description: "Serveur C3X de production IRSN"
