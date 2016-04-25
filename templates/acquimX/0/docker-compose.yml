@@ -1,0 +1,33 @@
+mount:
+  ports:
+  - 8022:22/tcp
+  log_driver: ''
+  tty: true
+  log_opt: {}
+  image: spherea/acquimx-mount:latest
+  volumes:
+  - acquimx-data:/opt
+  stdin_open: true
+  volume_driver: local
+populate:
+  log_driver: ''
+  labels:
+    io.rancher.scheduler.global: 'true'
+  tty: true
+  log_opt: {}
+  image: spherea/acquimx-populate:latest
+  volumes:
+  - acquimx-data:/opt
+  stdin_open: true
+  volume_driver: local
+run:
+  ports:
+  - 8020:80/tcp
+  log_driver: ''
+  tty: true
+  log_opt: {}
+  image: spherea/acquimx:latest
+  volumes:
+  - acquimx-data:/opt
+  stdin_open: true
+  volume_driver: local
