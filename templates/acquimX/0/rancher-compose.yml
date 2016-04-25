@@ -2,3 +2,8 @@ mount:
   scale: 1
 run:
   scale: 1
+
+.catalog:
+  name: "acquimX"
+  version: "v0.1-acquimx"
+  description: "acquimX, serveur météo."
