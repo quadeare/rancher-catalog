@@ -9,5 +9,7 @@ server:
   log_opt: {}
   image: spherea/c3x-samba:latest
   volumes:
-  - /share/samba
+  - c3x-samba:/share/samba
+  stdin_open: true
+  volume_driver: local
   stdin_open: true

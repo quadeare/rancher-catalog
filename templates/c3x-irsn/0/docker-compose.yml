@@ -4,8 +4,10 @@ Xengine-comX:
   - 14400:14400/tcp
   external_links:
   - c3x-samba/server:server-samba
-  volumes-from:
-  - c3x-samba/server:server-samba
+  volumes:
+  - c3x-samba:/share/samba
+  stdin_open: true
+  volume_driver: local
   log_driver: ''
   labels:
     io.rancher.container.start_once: 'true'
